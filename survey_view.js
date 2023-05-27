@@ -29,7 +29,7 @@ function displaySurvey(survey) {
           break;
   
         case 'satisfaction':
-          ['Total desacuerdo', 'Desacuerdo', 'Indiferente', 'De acuerdo', 'Totalmente de acuerdo'].forEach(function(option) {
+          ['Muy Mal', 'Mal', 'Regular', 'Bien', 'Muy Bien'].forEach(function(option) {
             let label = document.createElement('label');
             label.className = 'satisfactionOption';
             answerElement = document.createElement('input');
