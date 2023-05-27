@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crear Encuesta</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Crear Encuesta</h1>
+  </header>
+
+  <nav>
+    <a href="survey_form.html">Crear Encuesta</a> |
+    <a href="survey_view.html">Visualizar y Contestar Encuesta</a>
+  </nav>
+
+  <form id="surveyForm">
+    <label for="surveyName">Nombre de la encuesta:</label>
+    <input type="text" id="surveyName" required>
+    <label for="question">Pregunta:</label>
+    <input type="text" id="question" required>
+    <label for="type">Tipo de pregunta:</label>
+    <select id="type" required>
+      <option value="">-- selecciona un tipo --</option>
+      <option value="open">Abierta</option>
+      <option value="truefalse">Verdadero/Falso</option>
+      <option value="satisfaction">Nivel de satisfacción</option>
+    </select>
+    <button type="button" id="addQuestion">Agregar pregunta</button>
+  </form>
+
+  <footer>
+    Hecho con ♥ por TuNombre
+  </footer>
+
+  <script src="survey_form.js"></script>
+</body>
+</html>
